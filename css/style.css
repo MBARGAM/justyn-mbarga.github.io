@@ -1,0 +1,332 @@
+/* css photo */
+html {
+	font-size: 15px;
+}
+body{
+	background-color: #f5f5f5;
+	font-family: 'Arial', sans-serif;
+    color : rgb(73, 72, 72);
+	margin-left : 1rem;
+	margin-right : 1rem;
+}
+h2,h5{
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+}
+ul{
+	margin-top: 1rem;
+}
+footer{
+	
+	margin-top: 2rem ;
+	padding:2rem;
+	border-top: 2px solid rgb(73, 72, 72);
+
+}
+
+
+.image{
+	text-align: center;
+}
+.motBienvenue{
+	font-size: 1.5rem;
+	text-align: center;
+}
+.titre{
+	display: block;
+	font-size: 1.5rem;
+	margin-top :1rem;
+	font-weight: bold;
+}
+
+.justynPic{
+	
+	width: 70%;
+	margin: 0 auto;
+	box-shadow:  1px 2px 5px 3px grey;
+    border-radius: 25% ;
+	background-color: white;
+	
+}
+
+.imageProfil {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	box-shadow:  1px 2px 5px 3px grey;
+	position: relative;
+  	animation: bouger 2s ease-in-out infinite;
+}
+.block{
+	box-shadow:  1px 2px 5px 3px grey;
+	margin-top : 2rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: white;
+	
+}
+
+/* infos personnelle */
+
+.infoPrivee{
+	
+}
+.icon{
+	display: inline-block;
+	margin-right: 1.5rem;
+	font-size: 1.5rem;
+	 color : rgb(73, 72, 72);
+}
+.linkedin{
+	text-decoration: none;
+	 color : rgb(73, 72, 72);
+}
+.info{
+	display: inline-block;
+	font-size: 1.2rem;
+}
+.infoItem{
+	margin-bottom: 1rem;
+	text-decoration: none;
+}
+/* experiences professionnelles*/
+.postes{
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	background: #f5f5f5;
+	box-shadow:  1px 2px 5px 3px grey;
+	border-radius: 1rem;
+
+}
+.poste,.societe,.dates{
+	font-size: 1.2rem;
+	text-align: left;
+	font-weight: bolder;
+}
+/*langues*/
+/*competences*/
+.listeCompetence{
+	display :grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-gap: 1.5rem;
+	
+}
+.competence{
+	
+	text-align : center;
+	background: white;
+	animation: bouger 2s ease-in-out infinite;
+
+}
+.niveau,.langues,.qualites{
+	background: #f5f5f5;	
+}
+.langues{
+	padding: 1.5rem
+}
+/* footer */
+.contact{
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+}
+
+
+
+/* animations*/
+@keyframes bouger {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@media screen and (min-width: 742px) {
+		body{
+		margin-left : 2rem;
+		margin-right : 2rem;
+	}
+
+	ul{
+		margin-top: 2rem;
+	}
+	footer{
+		
+		margin-top: 3rem ;
+
+	}
+	.profil{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-gap: 1.5rem;
+	}
+	.titreInfo{
+		display: none;
+	}
+	.blockExperiencePro,.blockExpeAcademique ,.logiciel,.blockLangueQaualite{
+		display: grid;
+		grid-template-columns: 1fr 1fr  ;
+		grid-gap: 1.5rem;
+	}
+}
+@media screen and (min-width: 960px) {
+	body{
+		margin-left : 2.5rem;
+		margin-right : 2.5rem;
+	}
+	p{
+		font-size:1.3rem;
+	}
+	h5{
+		font-size: 1.5rem;
+	}
+
+	ul{
+		margin-top: 2.5rem;
+	}
+	footer{
+		
+		margin-top: 3rem ;
+		font-size: 1.5rem;
+		font-weight : bold;
+
+	}
+	.portrait{
+		width: 80%;
+		margin: 3rem auto;
+
+	}
+	.profil{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-gap: 2.5rem;
+	}
+	.titreInfo{
+		display: none;
+	}
+	.blockExperiencePro,.blockExpeAcademique ,.logiciel,.blockLangueQaualite{
+		display: grid;
+		grid-template-columns: 1fr 1fr  ;
+		grid-gap: 2rem;
+	}
+	.info{
+	display: inline-block;
+	font-size: 1.5rem;
+}
+	.infoItem{
+		margin-bottom: 1.5rem;
+
+	}
+	.infoPrivee{
+		padding-left: 10%;
+		padding-top: 7%;
+	}
+	.icon{
+		margin-right: 2.5rem;
+		font-size: 1.5rem;
+
+	}
+	.roleItem{
+		font-size: 1.5rem;
+	}
+	.poste,.societe,.dates{
+		font-size: 1.5rem;
+	}
+	.motBienvenue{
+		font-size: 2rem;
+		margin: 3rem;
+	}
+	.titre{
+		font-size: 2rem;
+		
+	}
+	.liAcademique{
+		font-size: 1.5rem;
+	}
+
+}
+@media screen and (min-width: 1200px) {
+		
+	body{
+		margin-left : 3rem;
+		margin-right : 3rem;
+	}
+	p{
+		font-size:1.5rem;
+	}
+	h5{
+		font-size: 2rem;
+	}
+
+	ul{
+		margin-top: 3rem;
+	}
+	footer{
+		
+		margin-top: 4rem ;
+		font-size: 2rem;
+		font-weight : bold;
+
+	}
+	.portrait{
+		width: 80%;
+		margin: 3rem auto;
+
+	}
+	.profil{
+		display: grid;
+		grid-template-columns: 1fr 1fr ;
+		grid-gap: 3rem;
+	}
+	.titreInfo{
+		display: none;
+	}
+	.blockExperiencePro,.blockExpeAcademique ,.logiciel,.blockLangueQaualite{
+		display: grid;
+		grid-template-columns: 1fr 1fr  ;
+		grid-gap: 2.5rem;
+	}
+	.info{
+	display: inline-block;
+	font-size: 1.5rem;
+}
+	.infoItem{
+		margin-bottom: 1.5rem;
+
+	}
+	.infoPrivee{
+		padding-left: 30%;
+		padding-top: 15%;
+	}
+	.icon{
+		margin-right: 2.5rem;
+		font-size: 2rem;
+
+	}
+	.roleItem{
+		font-size: 1.5rem;
+	}
+	.poste,.societe,.dates{
+		font-size: 2rem;
+	}
+	.motBienvenue{
+		font-size: 2rem;
+		margin: 3rem;
+	}
+	.titre{
+		font-size: 2rem;
+		
+	}
+}
