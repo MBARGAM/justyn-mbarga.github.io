@@ -97,6 +97,7 @@ footer{
 
 .infoItem{
 	text-decoration: none;
+	align-items: center;
 }
 /* experiences professionnelles*/
 .postes{
@@ -113,6 +114,13 @@ footer{
 	font-weight: bolder;
 }
 /*langues*/
+
+.translate{
+	text-decoration: none;
+	color : rgb(73, 72, 72);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
 /*competences*/
 .listeCompetence{
 	display :grid;
@@ -138,7 +146,18 @@ footer{
 	display: grid;
 	grid-template-columns: 1fr 1fr ;
 }
+.monemail,.monphone{
+	font-size: 1.2rem;
+	background: #f5f5f5;
+	font-weight: bold;
+}
 
+.translate:hover{
+	
+	color : rgb(19, 18, 18);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
 
 
 
@@ -168,6 +187,8 @@ footer{
     transform: scale(1);
   }
 }
+
+
 @media screen and (min-width: 720px) {
 	.blockDinfoPerso{
 		display: grid;
@@ -224,6 +245,12 @@ footer{
 	}
 	.infoItem{
 		align-items: center;
+	}
+	.monemail,.monphone{
+	font-size: 1.5rem;
+	background: #f5f5f5;
+	font-weight: bold;
+
 	}
 }
 @media screen and (min-width: 960px) {
@@ -288,8 +315,13 @@ footer{
 		
 	}
 	.liAcademique{
+		
 		font-size: 1.5rem;
 	}
+	.monemail,.monphone{
+	font-size: 1.6rem;
+	background: #f5f5f5;
+}
 
 }
 @media screen and (min-width: 1200px) {
@@ -361,4 +393,8 @@ footer{
 		font-size: 2rem;
 		
 	}
+	.monemail,.monphone{
+	font-size: 2rem;
+	background: #f5f5f5;
+}
 }
