@@ -152,6 +152,12 @@ footer{
 	font-weight: bold;
 }
 
+.translate:hover{
+	
+	color : rgb(19, 18, 18);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
 
 
 
@@ -181,6 +187,8 @@ footer{
     transform: scale(1);
   }
 }
+
+
 @media screen and (min-width: 720px) {
 	.blockDinfoPerso{
 		display: grid;
