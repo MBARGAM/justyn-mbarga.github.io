@@ -44,6 +44,7 @@ footer{
 .justynPic{
 	
 	width: 70%;
+	height : auto;
 	margin: 0 auto;
 	box-shadow:  1px 2px 5px 3px grey;
     border-radius: 25% ;
